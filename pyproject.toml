@@ -1,0 +1,25 @@
+[project]
+name = "project-genai-post-generator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "maneesha", email = "manumumba1881@gmail.com" }
+]
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "langchain==0.2.14",
+    "langchain-community==0.2.12",
+    "langchain-core==0.2.39",
+    "langchain-groq==0.1.9",
+    "pandas==2.0.2",
+    "python-dotenv>=1.2.3",
+    "streamlit==1.35.0",
+]
+
+[project.scripts]
+project-genai-post-generator = "project_genai_post_generator:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
